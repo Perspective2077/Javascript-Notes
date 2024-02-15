@@ -12,4 +12,6 @@ Tell me if u found something confusing plzz tell me because i made this notes th
 
 plz inform any wrong knowledge / grammar if u see one at vdhayal336@gmail.com 
 
+Try Learning things in github only because i might update notes as per requirement
+
 Feel free to delete this README.md file from zip file, if it's irritating u (i deleted it)

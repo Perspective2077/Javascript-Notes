@@ -80,7 +80,7 @@ document.addEventListener("keydown",(e)=>{
 //   console.log("Keydown event");
 })
 // Keyup  : when key released
-document.addEventListener("keydown",()=>{
+document.addEventListener("keyup",()=>{
      // console.log("Keyup event");
 })
 // Input : trigger when value of an input or textarea element changes

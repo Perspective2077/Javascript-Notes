@@ -90,21 +90,39 @@ final_object.toString()                   //used to check type of object i.e "[O
 
 // Object Destructuring 
 
-// it's syntax is same as creating object litreals i.e. "{}" but When you use the "{}" syntax on the left side of an assignment, it becomes a destructuring pattern. It allows you to extract values from an object and assign them to variables(variable will be keys by deafault and if u want another variable name use ":" after accesing the variables).
-// destructuring nested object is same but use ":{}" after accessing nested object (Note: there is no single syntax that can destructure and assign it's value to new variable u have to do that recursively(one by one))
+// it's syntax is same as creating object litreals i.e. "{}" but When you use the "{}" syntax on the left side of an assignment, it becomes a destructuring pattern. It allows you to extract values from an object and assign them to variables(variable will be key's name by deafault and if u want another variable name , use ":" with new variable after accesing the key).
+// To destructure an object u just need an object with same keys as target object seperated by "," on lhs(left hand side) , and automatically all values will be assigned to there corresponding keys
 
-let obj = { prop1: 'value1', prop2: 'value2', prop3: 'value3' ,prop4: { prop4:"value4" ,prop5:"value5"} };
+ let destructuring = { name : "johny" , age : 50 }
 
-let { prop1, prop2, prop3:variable , prop4:{prop4, prop5}, prop4:variable1 , prop6 = 'defaultValue'} = obj;
+let { 
+     name,     // name key value will be assigned to it if exist in target(rhs) object
+    age:year  // extracted value and assigned it to new variable
+ } = destructuring   
 
-prop1     // 'value1'
-prop2     // 'value2'
-variable  // 'value3' 
-variable1 // '{prop4: 'value4', prop5: 'value5'}'
-// prop3  // don't exist 
-prop4     // 'value4'
-prop5     // 'value5'
-prop6     // 'defaultValue'
+name // 'johny'
+year // 50
+age  //  Error : don't exist
 
+// destructuring nested object is same but use ":{}" after accessing nested object (Note: there is no single syntax that can destructure a nested object and extract it's own value from the object ,u have to do manually)
+
+let obj = {
+ prop1: {  prop2:"value2" , prop3:"value3" }
+}
+
+let { 
+ prop1,                    // extracted prop1 from the object
+ prop1: { prop2, prop3 }, // destructured nested object inside prop1
+ prop4 ='defaultValue'   // added a new variable with custom value
+} = obj;
+
+
+console.log(prop1,prop2,prop3,prop4)
+prop1    //  Object
+prop2    // 'value2'
+prop3    // 'value3'
+prop4    // 'defaultValue'
+
+// Now these variables are in global scope because we destructured the object
 
 // Future study : if u don't store an object it's treated as JSON i.e "{key: "value"}" , it's is treated as json unless n until u hold it inside a variable

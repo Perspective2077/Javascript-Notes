@@ -91,7 +91,7 @@ final_object.toString()                   //used to check type of object i.e "[O
 // Object Destructuring 
 
 // it's syntax is same as creating object litreals i.e. "{}" but When you use the "{}" syntax on the left side of an assignment, it becomes a destructuring pattern. It allows you to extract values from an object and assign them to variables(variable will be key's name by deafault and if u want another variable name , use ":" with new variable after accesing the key).
-// To destructure an object u just need an object with same keys as target object seperated by "," on lhs(left hand side) , and automatically all values will be assigned to there corresponding keys
+// To destructure an object u just need an object with same keys as target object seperated by "," on lhs(left hand side) , and automatically all values will be assigned to there corresponding keys if exist or will be ignored
 
  let destructuring = { name : "johny" , age : 50 }
 
@@ -124,5 +124,19 @@ prop3    // 'value3'
 prop4    // 'defaultValue'
 
 // Now these variables are in global scope because we destructured the object
+
+
+// One use case of destructuring is in function 
+function one({value}){   // now what is happening is when u call a function with parameter , it is assigned to argument variable (i.e. "{value}" ) . That's how destructuring is working here
+    console.log(value)     
+}
+
+one({
+    id : 1,
+    value : "this is destructured value of 'value' key"
+})  // called "one" function with object as an argument
+
+
+
 
 // Future study : if u don't store an object it's treated as JSON i.e "{key: "value"}" , it's is treated as json unless n until u hold it inside a variable

@@ -10,7 +10,7 @@
 let array1 = new Array(69,"Hitler","Uniball",true,1945)
 
 
-// Although u even can store arrays values in corresponding arrays variables
+// Although u even can store arrays values in corresponding arrays variables (Aka Array Destructuring )
 let [first,second,third] = ["first value","second value","third value"]
 // console.log(first)  // first value
 // console.log(second)  // second value

@@ -230,19 +230,6 @@ window.addEventListener("beforeunload",()=>{
 window.addEventListener("resize",()=>{
      // console.log("Window is being resized");
 })
-// Alert/Prompt
-// window.alert("this is alert")      //  give an Alert pop up on Window that's won't go until u manually cancel it                      
-// window.prompt("Type any value")   // same as alert but return a value that u enter in the input pop up on window 
-
-
-// Error : it's a built-in object represents an error that occurs during the execution of a program. They can be thrown using the "throw" statement that will stop the execution of code 
-// Syntax
-let error = new Error("this is an error") // takes only one argument i.e. string containing the message
-// Properties of an Error
-// name: For the generic Error object, this is usually set to "Error", but there are more specific error types with different names, such as SyntaxError, TypeError, etc.
-// stack : stack is the whole error that includes all details , the whole error you see in console is stack 
-// message : the message of the error
-error.message  // will return the string containing the message of the error so on, u can access the other two properties like this also
 
 
 // Media Events (Forgot to add media ;) , i didnt forgot just lazy )
@@ -381,7 +368,91 @@ function animation() {
 // cancelAnimationFrame()
 // Used to stop the call/loop u started 
 // Takes "requestAnimationFrame()" id as argument
-
 setTimeout(() => {
     cancelAnimationFrame(request_frame);    // cancelling the loop/calls using "requestAnimationFrame()" id after 2sec
 }, 2000);
+
+
+
+
+
+// Error : it's a built-in object represents an error that occurs during the execution of a program. They can be thrown using the "throw" statement that will stop the execution of code 
+// Syntax
+let error_method = new Error("this is an error") // takes only one argument i.e. string containing the message
+// Properties of an Error
+// name: For the generic Error object, this is usually set to "Error", but there are more specific error types with different names, such as SyntaxError, TypeError, etc.
+// stack : stack is the whole error that includes all details , the whole error you see in console is stack 
+// message : the message of the error
+error_method.message  // will return the string containing the message of the error so on, u can access the other two properties like this also
+
+
+// Window properties
+     
+// Alert/Prompt
+// window.alert("this is alert")      //  give an Alert pop up on Window that's won't go until u manually cancel it                      
+// window.prompt("Type any value")   // same as alert but return a value that u enter in the input pop up on window 
+
+
+// Navigator : it's an web api that have many methods/functions (Some need permission some don't ,some will work some won't :          depends on browser)
+// Clipboard : It's an Api that contain object that can be used to modify/access the system clipboard (Limited availability in browser).   
+// It returns a "promise" indicating the process is completed or failed 
+
+// navigator.clipboard.readText()  // Requests only "text" from the system clipboard, returning a Promise that is fulfilled with a string containing the clipboard's text once it's available.
+// navigator.clipboard.read() // same method as above but can also read data like :  HTML, and PNG image data etc.
+
+// navigator.clipboard.writeText()  // Writes only "text" to the system clipboard, returning a Promise that is resolved once the text is fully copied into the clipboard.
+// navigator.clipboard.write() // same method as above but can also write data like :  HTML, and PNG image data etc.
+
+// These methods will throw error if accessing clipboard is not allowed in the browser
+
+
+/*
+// Example , write() won't need confirmation of browser after interaction of user but read() needs even after intraction (In brave ,don't rely on this things where policies change browser to browser )
+
+window.addEventListener("click",()=>{  // did an interaction before using clipboard methods
+     
+  let check_clipboard = navigator.clipboard.readText("text")  // returns a promise telling the operation is done or not
+
+  check_clipboard.then((copied_text) => {
+          console.log(`Text copied successfully! : ${copied_text}`);
+     })
+     .catch((err) => {
+          console.error('Unable to copy text: ', err);
+     });
+
+})
+*/
+
+
+
+// Geolocation: Api that Provides users location to web applications if users desire.
+
+// One usefull method is
+// Geolocation: getCurrentPosition()
+// syntax : getCurrentPosition(success, error(optional), options(optional)) 
+// Parameters :  1. success : A callback function that will be called with an argument(i.e. GeolocationPosition object : have two properties coords and timestamp : time of accesing the location) which can be used to get position 2. callback function (GeolocationPositionError it's argument) used to show the error when failed extracting location  3. object including the following parameters: maximumAge,timeout,enableHighAccuracy
+
+/*
+// Example
+function success(geo_object) {
+     const crd = geo_object.coords;
+     console.log("Your current position is:");
+     console.log(`Latitude : ${crd.latitude}`);
+     console.log(`Longitude: ${crd.longitude}`);
+     console.log(`More or less ${crd.accuracy} meters.`);
+}
+
+function error(error_object) {
+     console.warn(`ERROR(${error_object.code}): ${error_object.message}`);
+}
+
+const options = {
+     enableHighAccuracy: true,  // true : can cause slow speed of web
+     timeout: 5000,   // Amount of time the device should take to return location (Default : Infinity)
+     maximumAge: 0,   // Amount of time in past that device can search to retrieve location that is stored in the cache of browser , if there is none it will generate new location (deafult : 0)
+};
+
+navigator.geolocation.getCurrentPosition(success, error, options);
+*/
+
+// for more info of navigator API read : "https://developer.mozilla.org/en-US/docs/Web/API/Navigator"

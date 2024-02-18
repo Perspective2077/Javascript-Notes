@@ -192,7 +192,7 @@ document.addEventListener("submit",(e)=>{
 document.addEventListener("reset",(e)=>{
      // console.log("you just reset the form values");
 })
-// Change : triggered when the user modifies the input field's content and then clicks outside the field causing it to lose focus (also triggered when the user interacts with checkboxes or radio buttons)
+// Change : triggered when the user modifies the input field's content and then clicks outside the field causing it to lose focus (also triggered when the user interacts with checkboxes,radio or range etc. input types)
 document.addEventListener("change",(e)=>{
      // e.preventDefault()
      // console.log("you just changed the value of input");

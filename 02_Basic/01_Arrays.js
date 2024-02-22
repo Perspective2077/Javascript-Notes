@@ -22,8 +22,8 @@ let [first,second,third] = ["first value","second value","third value"]
 // Length/join/at/reverse/spread
 array.length // Give the length of array
 // Output :  5
-array.join() // it will return a string with all the element separated by ","
-// Output : "69, 'Hitler', 'Uniball', true, 1945"
+array.join() // it will return a string with all the element joined together with the given argument (if none is given , default argument is coma)
+// Output : "69,Hitler,Uniball,true,1945"
 array.at(3) // will give the element at index given in agrument , u can also acces element in array by using "[]" after an array and telling the index inside []
 // Output : true
 array.reverse() // Reverse the order of elements in the given array

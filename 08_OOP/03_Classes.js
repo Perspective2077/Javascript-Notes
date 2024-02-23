@@ -6,7 +6,7 @@
 // Sometimes u could see people saying :
 // class expression : storing class in a variable and it is executed in strict mode
 // class declaration : declaring class name inside the syntax, so u can't re-declare class with same name but u can in expression because it is a variable and variables value can be changed
-// Nothing crazy , just idiots admiring complicity 
+
 
 
 // Syntax

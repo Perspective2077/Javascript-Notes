@@ -5,7 +5,7 @@
 // 1. regular fnc (u have to use 'function' keyword followed by function name of the function then "(){}" , this is called function declaration) 
 function regular_fnc(){}
 // 2.Anonymous function : function without name (aka function expression )
-function(){}
+function(){}  // u can store this function inside a variable and that will work same as regular fnc
 // 3. Arrow fnc (it works better than regular fnc for short code or rediability)
 // syntax
 let arrow_fnc = () => {}

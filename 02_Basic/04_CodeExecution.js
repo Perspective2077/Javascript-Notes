@@ -4,8 +4,8 @@
 // The code execution in javascript goes in 2 form
 // 1. Global execution
 // In both execution there are another two phase/part of the execution ,which are :
-// Naming/creation... phase 
-// In Naming/creation... phase all the variables are declared in global context(scope) with no values assigned to them (This process is also called "hoisting" )  i.e. undefined ,variables with "var" keyword become a standalone global property whereas without "var" keyword all variables become just an value
+// Naming/creation phase 
+// In Naming/creation phase all the variables are declared in global context(scope) with no values assigned to them (This process is called "hoisting" where variable and function declarations are moved to the top of their scope during compilation.This means that you can access (use) a variable or call a function before it is actually declared in your code.However, only the declarations are hoisted, not the values of them)  i.e. undefined ,variables with "var" keyword become a standalone global property whereas without "var" keyword all variables become just an value
 // Execution Phase 
 // In executional phase all the variables(even "var" was undefined till now) are assisgned with their corresponding value if given 
 
@@ -13,7 +13,9 @@
 
 // 2. Functional execution
 // In function execution phase behave differently 
-// 1. In naming phase instead of just declaring variable with value undefined , in fnc they assign function  value/property in naming phase only
+// 1. In naming phase instead of just declaring variable without value in variables , in fnc they assign function values(block of code inside it) in naming phase only (remember only Function declaration's value are hoisted , not the variable containing "function expression")
+// Ex. function name(){} u can call this function anywhere in your code file
+// let name = function(){} but u can't call 'name' fnc before it's declaration bc it is a variable . arrow fnc is also a variable storing fnc expression
 // 2. Execution phase happen only when u call the fnc
 // So whereever u call/run a fnc the execution is also sub divided into 2 parts 
 // All the fnc execution happen in a temprory "stack" containtner (it's just conceptual model made for undestanding) this process we call it "call stack"

@@ -4,8 +4,8 @@
 // Creating a fnc litreals
 // 1. regular fnc (u have to use 'function' keyword followed by function name of the function then "(){}" , this is called function declaration) 
 function regular_fnc(){}
-// 2.Anonymous function : function that are stored in a variable (The stored value is known as function expression )
-let regular_fnc1 = function(){}
+// 2.Anonymous function : function without name (aka function expression )
+function(){}
 // 3. Arrow fnc (it works better than regular fnc for short code or rediability)
 // syntax
 let arrow_fnc = () => {}

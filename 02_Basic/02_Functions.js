@@ -2,9 +2,9 @@
 //  As we know it's is a special kind of object that takes parameter and return a value and can be called by "()" , used to store block of code that u can re-use anytime
 
 // Creating a fnc litreals
-// 1. regular fnc (u have to use 'function' keyword followed by name( or if u don't use name , u can store it inside variable))
+// 1. regular fnc (u have to use 'function' keyword followed by function name of the function then "(){}" , this is called function declaration) 
 function regular_fnc(){}
-// 2.Anonymous function : function that are stored in a variable 
+// 2.Anonymous function : function that are stored in a variable (The stored value is known as function expression )
 let regular_fnc1 = function(){}
 // 3. Arrow fnc (it works better than regular fnc for short code or rediability)
 // syntax
@@ -12,6 +12,8 @@ let arrow_fnc = () => {}
 // 4.Immediately invoked function (IIFE) , means executed exactly after time of creation
 // syntax "(function)()"
 (function IIFE(){})()
+
+
 
 
 // Creating a fnc constructor 
@@ -94,3 +96,5 @@ function object_parameters(value = {1:value,2:variable}){
 }
 // object_parameters({1:"perspective",2:"name"})
 // "value" value is overrridden at the time of execution
+
+

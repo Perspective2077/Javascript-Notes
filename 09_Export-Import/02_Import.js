@@ -1,7 +1,8 @@
 // Import : used for importing the exported value
-// NOTE : While linking this file in js , use type="module" attribute because It enables the use of modern JavaScript features , without using this attribute js treat it as a regular js which means it will use older syntax to allow Backward Compatibility , also don't forgot to view Html file via localhost(live server) or browser wont allow import/export to take place
+// NOTE : While linking this file in js , use type="module" attribute because It enables the use of modern JavaScript features , without using this attribute js treat it as a regular js which means it will use older syntax to allow Backward Compatibility 
+// Also don't forgot to view Html file via localhost(live server) or browser wont allow import/export to take place because of (CORS)Cross-origin resource sharing policy
 
-// Types of Imports:
+//  Types of Imports:
 
 
 // 1. Named Imports 

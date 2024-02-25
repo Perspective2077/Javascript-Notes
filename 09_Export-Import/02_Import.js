@@ -17,7 +17,7 @@ import { variable, variable1 } from "./01_Export.js"; // now u have access of th
 // 2.Default Import:
 // Import the default value from a module.
 // syntax : import {randomname} from "file-path" 
-// if the given name is not found , the deafult value get printed anyway . And also if u don't use {} , it will also print the deafult export value bc default export doesn’t come in a list form like named exports do , so u doesn't need {} to access default export value
+// U don't have to use {} because default export doesn’t come in a "list" form like named exports do , so u doesn't need {} to access default export value
 import myfunction  from "./01_Export.js";  // will print the deafult export value bc if u don't use {} u are specifying it that default value should be assigned to that variable
 
 

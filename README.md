@@ -2,7 +2,7 @@ Notes are Made by Monkey so Wrong knowledge / gramer could exist
 
 I commented many lines of code so u not get confused
 
-I am assuming u know how to run a code inside your local machine (computer duh) . If not first download Node.js env from google then install it in your pc 
+I am assuming u know how to run a code inside your local machine (computer duh) . If not first download Node.js env from googoo then install it in your pc 
 
 For running a file , either u can use "Run"->"Run Without debugging" option on top nav of vs code or use "node yourfilename.js"(for node env duh)
 

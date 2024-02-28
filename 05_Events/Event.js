@@ -395,7 +395,7 @@ error_method.message  // will return the string containing the message of the er
 
 // Navigator : it's an web api that have many methods/functions (Some need permission some don't ,some will work some won't :          depends on browser)
 // Clipboard : It's an Api that contain object that can be used to modify/access the system clipboard (Limited availability in browser).   
-// It returns a "promise" indicating the process is completed or failed 
+// It returns a "promise"(skip this till u learn promises in next folder) indicating the process is completed or failed 
 
 // navigator.clipboard.readText()  // Requests only "text" from the system clipboard, returning a Promise that is fulfilled with a string containing the clipboard's text once it's available.
 // navigator.clipboard.read() // same method as above but can also read data like :  HTML, and PNG image data etc.

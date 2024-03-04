@@ -49,7 +49,8 @@ link.addEventListener("click",(e)=>{
      e.preventDefault() // this will stop the default behavior of that event i.e. redirecting to that link when click
 })
 
-// 2. stopPropagation() This method is used to stop the event from propagating up or down the DOM hierarchy. Reminder: like "usecapture" in "addvEventlistuner" used to decide the propagation of phase but "stopPropagation" used to stop the propagation Note: if "usecapture" start from child to parent(bubbling phase) u have to use "stopPropagation()" on child and if "usecapture" is true(capture phase) u have use "stopPropagation()" on parent
+// 2. stopPropagation() This method is used to stop the event from propagating up or down the DOM hierarchy. Reminder: like "usecapture" in "addvEventlistuner" used to decide the propagation of phase but "stopPropagation" used to stop the propagation
+// Note: if "usecapture" start from child to parent(bubbling phase) u have to use "stopPropagation()" on child to stop the propagation and if "usecapture"  starts from parent to child u have use "stopPropagation()" on parent to stop the propagation. In a nutshell , propagation can only be stopped from where it is originated , so if u clicked on child and want to stop the propagation(dont want to trigger it's parent) so u have use "stopPropagation()" on child itself 
 img.addEventListener("click", (e)=>{
      // e.stopPropagation()  // make sure "usecapture" is false on parent
      // console.log("clicked on Image"); 

@@ -37,17 +37,17 @@ regular_fnc()
 
 // Return value ( Except "IIFE" all fnc have return value(optional)) , it's only used inside fnc , and it's kinda fullstop for code execution
 
-//  Syntax (For executing all the afterward code we need to comment "return" keyword ,feel free to uncomment it)
+//  Syntax 
 function return1(){
 return "return values"
 }
-// for more than one line of return value u can use "," and for rediability u can enclose it by "()"
+// Note : U cannot return multiple value in Javascript 
 function return2(){
  return(
     "return values",
     88
 )
-}
+} // Return Output : 88 , Because fnc cant return multiple values , although u could return an array containing multiple values because array is still a single value
 
 // if a function doesn't explicitly have a return statement, it implicitly returns undefined
 // In arrow fnc if u don't use "{}" , it will implicitly return that one line of statement (Note : arrow fnc without "{}"  is only used for returning one statement)

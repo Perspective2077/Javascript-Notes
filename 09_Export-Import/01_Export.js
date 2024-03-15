@@ -35,7 +35,7 @@ export { fnc as myfunction };
 const myDefault = 'Default Message'
 export default myDefault   // At the time of importing variable from this file , if this file doesnt have a expected variable exported , this value will be used there
 // u must have default export for preventing errors while importing
-// You can have only one default export per file/module . Unlike named exports (where you can place "export" before the declaration), the export default statement must come after the declaration.
+// You can have only one default export per file/module . Unlike named exports (where you can place "export" before the declaration), the export default statement must come after the declaration but because of hoisting in function , u can use default export anywhere for a function (just before declaration or after / before declaration) 
 
 // The export default syntax allows any expression to be exported.(array literal , fnc expression)
 // export default 1 + 1

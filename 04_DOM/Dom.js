@@ -45,8 +45,8 @@ div.style.color = "black" // to apply any style just acess the style property fr
 // Some Info about a Element
 div.offsetHeight // will return the height of the Element
 div.offsetWidth // will return the Width of the Element
-div.offsetTop // will return the distance from top side
-div.offsetLeft // will return the distance from left side
+div.offsetTop // will return the distance from top side (Respect to parent element)
+div.offsetLeft // will return the distance from left side (Respect to parent element)
 
 // Creating an Element (one time use only)
 let child = document.createElement("div") // return the specific element by creating it

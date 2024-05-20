@@ -23,8 +23,9 @@ const Endpoint = "https://api.github.com/users/I-am-Perspective"
 
 // Create a new XMLHttpRequest object
 const xhr = new XMLHttpRequest();
+// now xhr have methods like :
 
-//  initialize the settings for an HTTP request before sending it.
+// open() : method to initialize a request for send to a url
 xhr.open('GET',Endpoint);  // takes two parameter , 1. method ("GET", "POST", "PUT", "DELETE",Ignored for non-HTTP(S) URLs.)
 //  2. Url to send the request  3. (optional) Boolean parameter (true default)  indicating whether or not to perform the operation asynchronously, If this value is false, the send() will block the execution of further JavaScript code until the entire HTTP request is completed and the response is received i.e. synchronously
 // 3.(optional) user name to use for authentication purposes (null default)
@@ -83,11 +84,20 @@ xhr.addEventListener("error", () => {
 
 
 // send() sends the request to the server (without sending request , you are not doing anything with those method)
-xhr.send() // takes only one optinal argument i.e. body of data to be sent in the XHR reques (Deafult null)
+xhr.send() // takes only one optinal argument i.e. data to be sent in the XHR request (Deafult null) like sending user data to database although feel free to ignore this , you will remember this when u start backend :)
+// but for now we dont need to send data to send , so we only getting the data
 
 
+// Now comes the Flabbergasting thing , XMLHttpRequest is not used now days because of fetch() api :) , fetch() is more powerfull over XMLrequest but one more thing , "axios" is even more powerfull lol , it gives more features then fetch but its a 3rd party package so we dont do that here and also most of work fetch can do
 
-// Now comes the Flabbergasting thing , XMLHttpRequest is not used now days because of fetch() api :) , although react like library still use it because it's also powerfull api
+// fetch() : Api used for fetching resources 
+fetch(Endpoint,{   
+     body: "this is response from frontend"   // just a example , not needed here
+     }
+)
+// Takes two arguments : 1. resource that you wish to fetch. This can either be: A string containing URL or A Request object (customizable url targetting u can make , not needed)
+// 2. options : An object containing any custom settings you want to apply to the request. The possible options are: [ body (data) , browsingTopics , cache , credentials , method , priority ........ ]
+// detail fetch options : "https://developer.mozilla.org/en-US/docs/Web/API/fetch"
 
 
 

@@ -53,10 +53,9 @@ function return2(){
 // In arrow fnc if u don't use "{}" , it will implicitly return that one line of statement (Note : arrow fnc without "{}"  is only used for returning one statement)
 let implicitly_return = () => "implicitly returned value"
 
-// Without return values fncs are called void fnc in other languages , but in js void is used for ignore return value
+// Without return values fncs are called void fnc in other languages , but in js void is used to ignore return value
 function doSomething() {}  // void fnc in other languages 
-void implicitly_return();   // Using void to execute a function and ignore its return value i.e undefined
-
+void implicitly_return();   // Using void to execute a function and ignore its return value and will return undefined
 
 
 
@@ -90,7 +89,8 @@ function fnc(first,second,third = "world"){
 
 // In a nutshell u can say parameters are variables and values are agruments , all the values will be assigned to the variables correspondingly (already assigned variable will be overridden by arguments in executing phase)
 // For assigning more than one value to same parameter(variable) in a fnc , u can operator "..." before the parameter and it will gasp(eat) all overflowed values
-// U can pass any type of values as arguments i.e array,string,object and even an another function known as A callback(function passed as an argument to another function to handle the completion of operation ,it's often used with async operations )
+// U can pass any type of values as arguments i.e array,string,object and even an another function aka A callback function
+// : function passed as an argument to another function known as "callback" function , also a function that accepts functions as parameters and/or returns a function known as “higher-order function”
 function object_parameters(value = {1:value,2:variable}){
     console.log(value);
 }

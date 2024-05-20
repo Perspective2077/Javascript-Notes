@@ -1,4 +1,5 @@
-// Math : An api used by js to do some maths 
+// Math : An api(Application Programming Interface) , you can imagine Api as a layer that makes communication easier , like we can communicate with math methods to do some mathematical operations without actually knowing the under the hood calculation
+// used by js to do some maths 
 
 
 // You can define a Number in two ways: 1. By directly assigning values 2. Using the "new" Keyword

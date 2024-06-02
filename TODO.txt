@@ -1,3 +1,4 @@
 TODO : 
 Windows.location more features 
 nested callback functions
+Array destructure example,output should be added

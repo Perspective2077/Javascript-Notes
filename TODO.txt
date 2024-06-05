@@ -1,4 +1,5 @@
 TODO FOR ADMIN : 
+Promises EXPLANATION + How they works
 Windows.location more features 
 nested callback functions
 Array destructure example,output should be added

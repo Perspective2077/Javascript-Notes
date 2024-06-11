@@ -1,14 +1,21 @@
 // Events In Dom
 // Browser give u many users/Inbuilt Events/properties that u can use (i.e. alert() , focus() , prompt() etc.)
 // console.log(window);  // Will give you all Windows Events/Properties
+// Event Lisnters : used to listen to a specific event , you can used them to run specific code when they get trigged
 
-// Event Lisnters : used to listen to a specific event
 // Adding Event Lisnters
 
 // 1. U can assign functions to Event so whenever the event happen the fmc will execute :
+// onclick means it will listen clicks on specific element so when u going to click on document the function we assigned to onclick will going to run
 document.onclick = ()=>{ 
-     // console.log("OnClick")
+     // console.log("OnClick")    // this code will run whenever u click on document
 }
+
+// AdvanceTip : all events in javascript like "onclick" can be used as a method/function also if u want to trigger them by yourself 
+// Example : 
+document.click() 
+// so from now whatever event u see can be used as above if u want to trigger them by yourself , just remove "on" prefix from them
+
 // 2.  attachEvent() Method  , Note: this method only used to works in Internet Explorer and Opera,
 // 3. In "jQuery" u could use "on" method instead of "addEventListener" (Works exactly same), Fact: JQuery is powerfull Library and used Most of the time before React  
 // All Above methods work fine or used in Early time only but the best menthod suggested now is no. 4
@@ -68,7 +75,6 @@ document.addEventListener("click",(event)=>{
 
 
 })
-
 
 
 // Events Type
@@ -216,6 +222,7 @@ document.addEventListener("focusin",()=>{
 })
 
 
+
 // Window Events (These Events are "window" specific only so don't forgot to use these property with "window" object)
 // Load : triggered when a webpage and all its resources (such as images and stylesheets) have finished loading.
 window.addEventListener("load",()=>{
@@ -332,10 +339,10 @@ document.onclick = ()=>{
 // Also target(2 argument) attribute specific value, if it's value is "_self" it will load the current browsing context into new window or tab. "_blank" will load content Everytime in new window/tab everytime , if any custom name is assigned it will check a window/tab/frame with that name exist or not , if it exist it will load content in that, if not then it will create a new window/tab with that specific name
 
 
-// blur()
+// blur()  : Usable with any focus item ex. input tag
 //  window.blur()  // used to remove focus from the window , making it inactive or sending it to the background.
 
-// focus()
+// focus() : Usable with any focus item
 //  window.blur()  // opposite of blur() used to give focus to that window (But because of shitty policies this could not work in your browser)
      
  // close

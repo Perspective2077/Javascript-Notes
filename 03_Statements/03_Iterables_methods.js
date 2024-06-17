@@ -19,12 +19,13 @@ let array = ["First value" , { key: "value" , name : "Usual"} , 1945 , 911 ]
 
 
 // ForEach
-// It needs callbacks with upto three arguments 1. elements of the array 2. Index of each value 3. Whole array
-// "forEach" Performs the specified action that is inside fnc for each element in an array (Changes will be changed inside original Array)
+// "forEach" used to loops over elements of array , you can give an function to ForEach method that going to run for each elements of array (Changes will be changed inside original Array)
+// It can function with upto three arguments 1. elements of the array 2. Index of each value 3. Whole array
 // syntax
 array.forEach((item,index,array)=>{
     // Your code here 
     // console.log(`${index} : ${item} from (${array})`);
+  
 })
 // Also u can declare fnc out side of Iteration menthods and use in it inside
 function outside(item,index,array){

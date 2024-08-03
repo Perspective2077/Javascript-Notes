@@ -3,3 +3,4 @@ Promises EXPLANATION + How they works
 Windows.location more features 
 nested callback functions
 Array destructure example,output should be added
+event delegations + event keywords

@@ -76,7 +76,7 @@ new_object["name"] = "your name" // will not effect new_object or will give erro
 
 // assign (used to concat objects inside an another object)
 let final_object = Object.assign({},new_object,object,context2) // it returns an modified object in which all other argument objects except first are combined inside first(target) object , similar keys values will be overridden by upcoming object in argument
-// spread operator (U can also use spread operator if u want to disintegrate objects into a new object Note: same key values will be overridden)
+// spread operator (U can also use spread operator if u want to disintegrate objects into a new object Note: same key values will be overridden because in object if it find two same keys then the last value it found will be the final value of the key)
 let final_object1 = {...object,...context2}
 
 // keys,values,entries/hasOwnProperty/toString

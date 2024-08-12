@@ -4,3 +4,10 @@ Windows.location more features
 nested callback functions
 Array destructure example,output should be added
 event delegations + event keywords
+
+
+
+#Create new folder for adding tips 
+attribute wagera wagera
+Techincall terms
+add computed property names insi

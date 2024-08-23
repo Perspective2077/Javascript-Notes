@@ -1,4 +1,5 @@
 TODO FOR ADMIN : 
+Arrow fnc, withoutt brackets using arrow fnc
 Promises EXPLANATION + How they works
 Windows.location more features 
 nested callback functions

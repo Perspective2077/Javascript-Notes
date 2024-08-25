@@ -1,4 +1,5 @@
 TODO FOR ADMIN : 
+object keyss, direct values without keys
 Arrow fnc, withoutt brackets using arrow fnc
 function* need to ad
 Promises EXPLANATION + How they works

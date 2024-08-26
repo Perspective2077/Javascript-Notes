@@ -14,3 +14,10 @@ event delegations + event keywords
 attribute wagera wagera
 Techincall terms
 add computed property names insi
+
+
+
+
+
+
+add websocket working 

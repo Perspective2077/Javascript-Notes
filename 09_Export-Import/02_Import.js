@@ -32,6 +32,12 @@ import myfunction  from "./01_Export.js";  // will print the deafult export valu
 // Syntax: import 'file-path'
 
 
+// 4. Lazy Import:
+// Import file's dynamically using import() method , this method take file path as an argument and returns an promise , that promise resolves to a object containing all the exports inside it while default export named as "default" init. 
+// If you need to use a named export, you can destructure the object the import returns
+// Example :   import("./01_Export.js").then((exports) = > { let defaultFnc = exports.default ; let nameFnc = exports.variable} )
+
+
 // additional info about Imports/exports
 
 // You even can change name of the imported named exported value by using "as" keyword after it

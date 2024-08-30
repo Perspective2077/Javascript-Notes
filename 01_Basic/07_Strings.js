@@ -68,9 +68,16 @@ Standerd.split('e')   // used to split a string into an array of substrings , it
 Standerd.repeat(2)  // used to repeat the value as many times as u give the argument
 // Output : "  Hello world    Hello world  "
 
+// includes()
+Standerd.startsWith("l") // It check wheather the string starts with the passed character/word or not , result will be in bool and if nothing passed it always be true
+// Output : false
 
 // includes()
-Standerd.includes("lo") // It check wheather passed character/word is present in string or not , result will be in bool and if nothing passed it always be true
+Standerd.includes("l") // It check wheather passed character/word is present in string or not 
+// Output : false
+
+// includes()
+Standerd.endsWith("l") //  It check wheather the string ends with the passed character/word or not
 // Output : true
 
 

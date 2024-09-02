@@ -190,17 +190,20 @@ document.addEventListener("touchcancel",()=>{
 
 
 // Form Events
+let form = document.getElementsByTagName("form")[0]
+
 // Submit : trigger when u submit a form
-document.addEventListener("submit",(e)=>{
+form.addEventListener("submit",(e)=>{
       e.preventDefault()
+      e.target.reportValidity()   // To perform Validation of form Explicitly that got removed from preventDefault() method
      // console.log("you just submmited the form");
 })
 // Reset : trigger when u reset a form
-document.addEventListener("reset",(e)=>{
+form.addEventListener("reset",(e)=>{
      // console.log("you just reset the form values");
 })
 // Change : triggered when the user modifies the input field's content and then clicks outside the field causing it to lose focus (also triggered when the user interacts with checkboxes,radio or range etc. input types)
-document.addEventListener("change",(e)=>{
+form.addEventListener("change",(e)=>{
      // e.preventDefault()
      // console.log("you just changed the value of input");
 })

@@ -20,6 +20,11 @@ let second_String = new String("Hello world")
 
 let Standerd = "  Hello World  "
 
+// length
+Standerd.length  // Tells the length of the String including spaces
+// Output : 15
+
+
 //  toUpperCase()
 Standerd.toUpperCase()  // Make All Letter Uppercase
 //  Output : "  HELLO WORLD  "

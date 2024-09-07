@@ -1,6 +1,7 @@
 TODO FOR ADMIN : 
 object keyss, direct values without keys
 Arrow fnc, withoutt brackets using arrow fnc
+crypto Api need to add inside math api
 function* need to ad
 Promises EXPLANATION + How they works
 Windows.location more features 

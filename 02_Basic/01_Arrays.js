@@ -71,4 +71,4 @@ Array.of("hello",2023) // returns a array with set of elements that are given in
 
 
 // For more methods : 
-// import "../03_medium/03_Iterables_methods"
+// import "../03_Statements/03_Iterables_methods"

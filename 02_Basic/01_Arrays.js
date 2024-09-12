@@ -19,15 +19,25 @@ let [first,second,third] = ["first value","second value","third value"]
 //Array methods
 
 
-// Length/join/at/reverse/spread
+// Length/join/at/indexOf/lastIndexOf
 array.length // Give the length of array
 // Output :  5
 array.join() // it will return a string with all the element joined together with the given argument (if none is given , default argument is coma)
 // Output : "69,Hitler,Uniball,true,1945"
-array.at(3) // will give the element at index given in agrument , u can also acces element in array by using "[]" after an array and telling the index inside []
-// Output : true
+array.at(2) // will give the element at index given in agrument , u can also acces element in array by using "[]" after an array and telling the index inside []
+// Output : "Uniball"
+array.indexOf('Hitler') // will give index of the given value in the array & if not present returns -1 , it can take another value as argument telling add 'index of the given value' init and return it ex. if you gave array.indexOf('Hitler',2) it will return 3
+// Output : 1
+array.lastIndexOf('Hitler') // Same as indexOf() method , but it searches index of the element backwards
+// Output : 3
+
+
+
+// reverse/includes/spread_Operator
 array.reverse() // Reverse the order of elements in the given array
 // Output: [1945, true, 'Uniball', 'Hitler', 69, 'added']
+array.includes('Hitler') // Tells weather given number exist in array or not
+// Output : true
 let spreaded_array = [...array,...array1] // spread operator can be used to disintegrate arrays 
 
 
@@ -36,7 +46,6 @@ array.push("element") // Add the given value to last Index in the array
 // Output :  [69, 'Hitler', 'Uniball', true, 1945, 'element']
 array.pop() // Remove last element in the array
 // Output :  [69, 'Hitler', 'Uniball', true, 1945]
-
 
 
 // unshift/shift

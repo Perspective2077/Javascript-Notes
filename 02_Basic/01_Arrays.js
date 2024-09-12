@@ -43,16 +43,16 @@ let spreaded_array = [...array,...array1] // spread operator can be used to disi
 
 // push/pop
 array.push("element") // Add the given value to last Index in the array
-// Output :  [69, 'Hitler', 'Uniball', true, 1945, 'element']
+// Output : 6 ( It returns the number of element in the array after pushing . changes will be made in original array i.e [69, 'Hitler', 'Uniball', true, 1945, 'element'] )  . Same goes for other removing , adding methods below
 array.pop() // Remove last element in the array
-// Output :  [69, 'Hitler', 'Uniball', true, 1945]
+// Output :  5
 
 
 // unshift/shift
 array.unshift("element") // Add the given value to first Index in the array
-// Output :  ["element",69, 'Hitler', 'Uniball', true, 1945, 'element']
+// Output :  6
 array.shift() // Remove first element in the array
-// Output :  [69, 'Hitler', 'Uniball', true, 1945]
+// Output :  5
 
 
 

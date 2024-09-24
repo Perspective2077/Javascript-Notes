@@ -316,9 +316,10 @@ div.addEventListener('transitionend', function() {
 // ScrollTo  : used to get or set the number of pixels that an element's content is scrolled vertically.
 let html = document.getElementsByTagName("div")[0]
 document.addEventListener("click",()=>{
-     // html.scrollTop = 1200 // assign the value u want to scroll 
+// Tip : 
+// you can use "element.scrollHeight" property to get the scrollable Height of the element and use the hieght to scroll to the bottom of element and for windows you can "document.documentElement.scrollHeight"
+// element.scrollTop = element.scrollHeight // assign the value u want to scroll 
 })
-
 
 // Open 
 // The open() method of the Window loads a specified resource into a new or existing browsing context( a tab, a window, or an iframe) under a specified name.it takes three arguments 

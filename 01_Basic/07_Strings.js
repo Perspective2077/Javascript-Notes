@@ -17,6 +17,7 @@ let second_String = new String("Hello world")
 
 
 // Methods of Strings
+// Note : these methods return a new string ( & doesnt change the original string ) as we talked in DataTypes why
 
 let Standerd = "  Hello World  "
 
@@ -42,6 +43,11 @@ Standerd.trimStart()  // To remove all starting spaces from string
 // Output : "Hello World  "
 Standerd.trimEnd()  // To remove all  end spaces from string
 // Output : "  Hello World"
+
+
+// concat()
+Standerd.concat("...")  // added the given string into string you use the method on
+// Output : "  Hello World  ..."
 
 
 // charAt()

@@ -55,7 +55,6 @@ array.shift() // Remove first element in the array
 // Output :  5
 
 
-
 // slice/splice/concate/flat
 array.slice(1,4) // it returns a new array of element that comes under the range of arguments  i.e index 1(inclusive) to 4(exclusive) , it doesnt change original array
 // Output :  ['Hitler', 'Uniball', true]
@@ -66,7 +65,10 @@ let new_array = array.concat(array1,[2,3,["hi",["world",2024]]]) // it returns a
 new_array.flat(Infinity) // It returns a new array with all sub-array elements concatenated into it recursively(one by one) up to the specified depth(number).
 // Output : [69, 'added', 69, 'Hitler', 'Uniball', true, 1945, 2, 3, 'hi', 'world', 2024]
 
-
+//  delete
+delete array[0] //  delete method is used to delete values from objects (array and object litreal ) , it returns a boolean value indicating that value is removed or not
+// Output : true
+// Now our array would look like this : ['added', 69, 'Hitler', 'Uniball', true, 1945, 2, 3, 'hi', 'world', 2024]
 
 // from/isArray/of
 Array.from("hello",x=>x+x,)  // It is used to create a new Array instance from an iterable(things that can be looped) or array-like object , it takes 3 argument 1.  iterable or array-like structures that u want to convert into array 2 .map fnc(Optional) that will call on every element of the array. 3.thisArg(Optional) Values to use inside mapFn.

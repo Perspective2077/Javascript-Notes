@@ -5,6 +5,7 @@ Arrow fnc, withoutt brackets using arrow fnc
 crypto Api need to add inside math api
 function* need to ad
 Promises EXPLANATION + How they works
+async func always return a promise .. no matter what.. if u used the async keyword fnc going to retrun an promise
 Windows.location more features 
 nested callback functions
 Array destructure example,output should be added

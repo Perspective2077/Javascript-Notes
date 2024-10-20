@@ -19,7 +19,7 @@ Techincall terms
 add computed property names insi
 
 
-
+IntersectionObserver ( need to add in Event section )
 
 
 

@@ -11,7 +11,7 @@ nested callback functions
 Array destructure example,output should be added
 event delegations + event keywords
 
-
+single array automatic conversion in string by javascript neeeds to be added 
 
 #Create new folder for adding tips 
 attribute wagera wagera

@@ -18,6 +18,7 @@ attribute wagera wagera
 Techincall terms
 add computed property names insi
 
+localstrage and other data that stores string as values... if u want to store js code therer . u might want to parse it.. json parsing info need to be added
 
 IntersectionObserver ( need to add in Event section )
 

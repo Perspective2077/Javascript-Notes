@@ -13,6 +13,8 @@ event delegations + event keywords
 
 single array automatic conversion in string by javascript neeeds to be added 
 
+we call object also an object
+ 
 #Create new folder for adding tips 
 attribute wagera wagera
 Techincall terms

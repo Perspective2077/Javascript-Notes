@@ -12,7 +12,7 @@ Array destructure example,output should be added
 event delegations + event keywords
 
 single array automatic conversion in string by javascript neeeds to be added 
-
+document.activeElement in event sections
 we call object also an object
  
 #Create new folder for adding tips 

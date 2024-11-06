@@ -16,7 +16,9 @@ find method in iterables loop
 single array automatic conversion in string by javascript neeeds to be added 
 document.activeElement in event sections
 we call object also an object
- 
+
+ When you import something from a JavaScript (or TypeScript) module, the entire file is executed immediately as it’s imported.
+
 #Create new folder for adding tips 
 attribute wagera wagera
 Techincall terms

@@ -11,6 +11,7 @@ nested callback functions
 Array destructure example,output should be added
 event delegations + event keywords
 
+multiple variable deffinging in one line
 find method in iterables loop
 Map object constructor
 single array automatic conversion in string by javascript neeeds to be added 

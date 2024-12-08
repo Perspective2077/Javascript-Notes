@@ -19,7 +19,7 @@ document.activeElement in event sections
 we call object also an object
 
  When you import something from a JavaScript (or TypeScript) module, the entire file is executed immediately as it’s imported.
-
+storing new values in object
 #Create new folder for adding tips 
 attribute wagera wagera
 Techincall terms

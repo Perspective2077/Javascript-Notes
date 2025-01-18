@@ -10,7 +10,7 @@ Windows.location more features
 nested callback functions
 Array destructure example,output should be added
 event delegations + event keywords
-
+getBoundingClientRect() dom event
 multiple variable deffinging in one line
 find method in iterables loop
 Map object constructor

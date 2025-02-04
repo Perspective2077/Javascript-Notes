@@ -17,7 +17,7 @@ Map object constructor
 single array automatic conversion in string by javascript neeeds to be added 
 document.activeElement in event sections
 we call object also an object
-
+promise wrapping
  When you import something from a JavaScript (or TypeScript) module, the entire file is executed immediately as it’s imported.
 storing new values in object
 #Create new folder for adding tips 

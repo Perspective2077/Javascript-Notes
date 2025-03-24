@@ -32,3 +32,5 @@ IntersectionObserver ( need to add in Event section )
 
 
 add websocket working 
+
+justice for js docs.. don't have time :(

@@ -28,8 +28,7 @@ let new_object = new Object({
 new_object.name  // acessing value using "." notation
 new_object["value of"] // acessing value using [] brackets 
 new_object[symbol] // acessing using [] brackets , it is usefull when u want to acess symbol or key that is not suitable to acess from "." notation i.e. key that contain spaces/special character  , Note : u need "" to access keys that are stored as strings(all keys are stored as strings in objects except symbol)
-new_object[symbol]["second"]  // acessing nested values
-// Note : Anything that takes an argument is a function, so whenever u use ex."array.method()" u are calling the function inside the array object (This is something u will learn in prototypes like array is not an object literals and still we are treating it as a object literals and acessing methods using "." or "[]" notation)  
+new_object[symbol]["second"]  // acessing nested values , so as said earlier you can chain things in js
 
 
 

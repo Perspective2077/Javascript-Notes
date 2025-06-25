@@ -6,7 +6,7 @@ I am assuming u know how to run a code inside your local machine (computer duh) 
 
 For running a file , either u can use "Run"->"Run Without debugging" option on top nav of vs code or use "node yourfilename.js"(for node env duh)
 
-I live in mumbai(i don't) so u could found space between comments confusing so add them by yourself (duh)
+I live in mumbai(i don't) so u could find spaces between comments confusing so add them by yourself (duh)
 
 Tell me if u found something confusing plzz tell me because i made this notes that even i can understand 
 

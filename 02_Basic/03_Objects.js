@@ -83,7 +83,7 @@ let keys = Object.keys(final_object1)      // returns an array containing all ke
 let values = Object.values(final_object1)  // returns an array containing all values from the object
 let entries = Object.entries(new_object)  // returns an array containing all entries(key:value) from the object
 final_object1.hasOwnProperty(`name`)      //check weather the key is present in the object or not
-final_object.toString()                   //used to check type of object i.e "[Object Object]" (first is it's nature(object) and second is it's type(object) )
+final_object.toString()                   //used to check type of object i.e "[object Object]" , first is it's nature i.e. "object" and second is it's type that is also Object 
 
 
 

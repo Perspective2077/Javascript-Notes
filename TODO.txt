@@ -29,7 +29,7 @@ localstrage and other data that stores string as values... if u want to store js
 
 IntersectionObserver ( need to add in Event section )
 
-
+add .elementFromPoint and getCoalescedEvents() methods
 about ASI in interivwers 
 add websocket working 
 

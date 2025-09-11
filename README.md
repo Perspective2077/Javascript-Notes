@@ -10,8 +10,9 @@ I live in mumbai(i don't) so u could find spaces between comments confusing so a
 
 Tell me if u found something confusing plzz tell me because i made this notes that even i can understand 
 
-plz inform any wrong knowledge / grammar if u see one at vdhayal336@gmail.com 
+plz inform any wrong knowledge / grammar if u see one at discord
 
 Note : Plz Try Learning things in github only because i might update notes as per requirement
 
 Still if u make your mind to download these , so keep eyes on updates and Feel free to delete this README.md file from zip file, if it's irritating u (i deleted it)
+
